@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sponge.AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=0">
+  <style>
+    @font-face {
+      font-family: 'TitleFont';
+      src: url('./Uni\ Sans\ Heavy.otf') format('truetype'); /* Replace 'path_to_title_font' with the actual path to your title font file */
+      /* Add more font formats if necessary */
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'ButtonFont';
+      src: url('./Barlow-ExtraBold.ttf') format('truetype'); /* Replace 'path_to_button_font' with the actual path to your button font file */
+      /* Add more font formats if necessary */
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    body {
+      background: url('./background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden; /* Disable scrolling */
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .title {
+      font-family: 'TitleFont';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: #fff;
+    }
+    
+    .discord-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #7289da;
+      color: #fff;
+      font-family: 'ButtonFont';
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px; /* Make it pill-shaped */
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .discord-button:hover {
+      background-color: #5a68a0;
+      filter: brightness(110%); /* Increase brightness on hover */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a blur shadow effect */
+    }
+    
+    .discord-button i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Sponge AI</h1>
+  <div class="container">
+    <a class="discord-button" href="https://discord.gg/ZmcV4GdP7G" target="_blank">
+      <i class="fab fa-discord"></i> Join our Discord Server
+    </a>
+  </div>
+</body>
+</html>
